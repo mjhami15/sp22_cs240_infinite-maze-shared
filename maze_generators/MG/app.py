@@ -6,7 +6,7 @@ import json
 app = Flask(__name__)
 
 #Route for getting MG data
-@app.route('/', methods=["GET"])
+@app.route('/generate', methods=["GET"])
 def mg():
     response = jsonify({"geom": ["9aa2aac", "59aaaa4", "51aa8c5", "459a651", "553ac55", "559a655", "3638a26"]})
     response.headers["Content-Type"] = "application/json"

@@ -7,7 +7,7 @@ import random
 app = Flask(__name__)
 
 #Route for getting MG data
-@app.route('/', methods=["GET"])
+@app.route('/generate', methods=["GET"])
 def mg():
     one = {"geom": ["b8a0a8e", "d7b0e7d", "1ae5ba4", "4dd5dd1", "1430614", "53e5b65", "3aa0aa6"]}
     two = {"geom": ["9aa0aac", "5984ba4", "5320ae5", "0a808a0", "1e575d5", "5b0c575", "3a202a6"]}
@@ -17,6 +17,5 @@ def mg():
     choice = random.choice(choices)
     response = jsonify(choice)
     response.headers["Content-Type"] = "application/json"
-    response.headers["Age"] = 0
-    response.headers["Cache-Control: max-age"] = 3600
+    response.headers["Cache-Control"] = 'no-store'
     return response, 200
