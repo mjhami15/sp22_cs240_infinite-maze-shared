@@ -6,6 +6,11 @@ import random
 
 app = Flask(__name__)
 
+@app.route("/")
+def add_to_list():
+    r = requests.put("http://127.0.0.1:5000/addMG", json={"name": "stndrd MG1", "url": "http://127.0.0.1:24002/", "author": "Matt Hamilton", "weight": 1})
+    return jsonify({"Added": "MG"}), 200
+
 #Route for getting MG data
 @app.route('/generate', methods=["GET"])
 def mg():
