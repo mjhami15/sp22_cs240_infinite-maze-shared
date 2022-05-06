@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def add_to_list():
-    r = requests.put("http://127.0.0.1:5000/addMG", json={"name": "stndrd MG1", "url": "http://127.0.0.1:24002/", "author": "Matt Hamilton", "weight": 1})
+    r = requests.put("http://sp22-cs240-adm.cs.illinois.edu:24000/addMG", json={"name": "Random Maze (Dynamic) [REAL]", "url": "http://172.22.152.32:24010", "author": "Matt Hamilton", "weight": 1})
     return jsonify({"Added": "MG"}), 200
 
 #Route for getting MG data

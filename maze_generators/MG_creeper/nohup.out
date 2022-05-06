@@ -1,0 +1,19 @@
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://172.22.152.32:24007 (Press CTRL+C to quit)
+10.250.55.209 - - [06/May/2022 16:07:55] "GET / HTTP/1.1" 200 -
+10.250.55.209 - - [06/May/2022 16:14:12] "GET / HTTP/1.1" 200 -
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://172.22.152.32:24011 (Press CTRL+C to quit)
+10.250.55.209 - - [06/May/2022 16:24:55] "GET / HTTP/1.1" 200 -
+10.250.55.209 - - [06/May/2022 16:24:55] "GET /favicon.ico HTTP/1.1" 404 -
+172.22.152.153 - - [06/May/2022 16:25:01] "GET /generate?col=0&row=0 HTTP/1.1" 200 -
+172.22.152.153 - - [06/May/2022 16:25:04] "GET /generate?col=0&row=-1 HTTP/1.1" 200 -
+172.22.152.153 - - [06/May/2022 16:25:05] "GET /generate?col=1&row=-1 HTTP/1.1" 200 -
+172.22.152.153 - - [06/May/2022 16:25:07] "GET /generate?col=1&row=0 HTTP/1.1" 200 -
+172.22.152.153 - - [06/May/2022 16:33:12] "GET /generate?col=0&row=0 HTTP/1.1" 200 -
